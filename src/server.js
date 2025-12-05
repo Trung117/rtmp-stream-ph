@@ -1,3 +1,15 @@
+const crypto = require('crypto');
+
+// Polyfill for global.crypto in older Node.js versions
+if (!global.crypto) {
+    global.crypto = {};
+}
+if (!global.crypto.getRandomValues) {
+    global.crypto.getRandomValues = (buffer) => {
+        return crypto.randomFillSync(buffer);
+    };
+}
+
 const NodeMediaServer = require('node-media-server');
 const path = require('path');
 
