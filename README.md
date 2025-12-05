@@ -62,7 +62,6 @@ You should see output indicating the Node Media Server has started:
 *   **FFmpeg Error**: If the server logs show errors related to FFmpeg, ensure FFmpeg is installed and accessible globally via the command line (`ffmpeg -version`).
 *   **Latency**: HLS has inherent latency (usually 10-30 seconds). This is normal.
 *   **CORS**: The server is configured to allow all origins (`Access-Control-Allow-Origin: *`).
-*   **Crypto Error**: If you encounter `TypeError: crypto.getRandomValues is not a function`, ensure you have the latest code which includes a polyfill for this method, or upgrade your Node.js version.
 
 ## Project Structure
 
