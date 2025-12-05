@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trung117/rtmp-stream-ph.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Trung117/rtmp-stream-ph/issues"
+  },
+  "homepage": "https://github.com/Trung117/rtmp-stream-ph#readme",
+  "dependencies": {
+    "node-media-server": "^4.2.2"
+  }
+}
